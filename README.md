@@ -164,7 +164,7 @@ Unuk hasil dari code diatas adalah seperti berikut :
 
 ![image](https://user-images.githubusercontent.com/79520394/182106223-f06571f1-f84c-4c72-b08c-9175e8dad106.png)
 
-Kalian bisa pencet link pada text dan akan menuju *kategori*dan *kategori/add*.
+Kalian bisa pencet link pada text dan akan menuju *kategori* dan *kategori/add*.
 
 ![image](https://user-images.githubusercontent.com/79520394/182106223-f06571f1-f84c-4c72-b08c-9175e8dad106.png)
 _Tampilan web /kategori_
