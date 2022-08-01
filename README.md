@@ -111,3 +111,63 @@ Berikut tampilan web.php :
 
 
 # Tugas
+Pada tugas modul 3 kali ini saya akan membuat route yang menuju ke kategori dan akan menuju lagi ke halaman tambah data kategori menggunakan route controller.
+
+Pertama kalian buat buat controllernya dengan mengetikkan :
+
+```
+php artisan make:controller KategoriController
+```
+
+Setelah kalian membuat controller baru, maka file yang akan kalian buat akan berada di app - Http - Controllers. Pada file KategoriController.php kalian ketik code berikut :
+
+```
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class KategoriController extends Controller
+{
+    Public function homeClass(){
+        return "<a href='/kategori'> Menuju kategori </a>";
+    }
+
+    Public function kategoriClass(){
+        return 'Ini adalah halaman Kategori <p><a href="/kategori/add"> Tambah kategori</a></p>';
+    }
+
+    Public function kategoriAddClass(){
+        return 'Halaman add kategori <p><a href="/home"> Balik ke halaman utama</a>';
+    }
+}
+```
+
+Fungsi membuat controller tersebut adalah untuk membuat fungsi atau isi dari web php yang akan dibuat, setelah kalian mengetikkan code berikut kalian pergi ke web.php dan ketik code berikut :
+
+```
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KategoriController;
+
+
+Route::get('/home', [KategoriController::class, 'homeClass']);
+Route::get('/kategori', [KategoriController::class, 'kategoriClass']);
+Route::get('/kategori/add', [KategoriController::class, 'kategoriAddClass']);
+```
+
+Fungsi route::get adalah untuk membuat lokasi url yaitu "/" atau _slash_ pada router url, pada koma (,) selanjutnya terdapat array yang diapit dengan tanda "[]" yang berisi nama controller yang telah dibuat dan nama funtion di dalamnya. Untuk mengakses web diatas kalian ketikkan *localhost:8000/{id}* id yang dimaksud itu adalah nama yang berada di "/" atau _slash_, maka kita ketikkan url berikut localhost:8000/home.
+
+Unuk hasil dari code diatas adalah seperti berikut :
+
+![image](https://user-images.githubusercontent.com/79520394/182106223-f06571f1-f84c-4c72-b08c-9175e8dad106.png)
+
+Kalian bisa pencet link pada text dan akan menuju *kategori*dan *kategori/add*.
+
+![image](https://user-images.githubusercontent.com/79520394/182106223-f06571f1-f84c-4c72-b08c-9175e8dad106.png)
+_Tampilan web /kategori_
+
+![image](https://user-images.githubusercontent.com/79520394/182106604-b45b08e3-6fb6-4c9d-960d-e1069c513a0c.png)
+_Tampilan web /kategori/add_
