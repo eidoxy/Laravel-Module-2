@@ -72,6 +72,7 @@ Route::any(‘/welcome’, fucntion() {
 ```
 
 Setelah kalian mengenal apa itu router dan jenis jenis router, selanjutnya kita akan membuat router sederhana. Untuk membuat router pada server kalian harus mengaktifkan server laravel serta web server kalian, disini saya menggunakan web server XAMPP.
+
 ![image](https://user-images.githubusercontent.com/79520394/182096364-90f02f48-1d82-4fcc-8bf6-beda8c023342.png)
 
 Dan untuk mengaktifkan server laravel kalian ketik code berikut ke terminal/cmd, tapi sebelumnya kalian harus pergi ke folder project penjualan (nama project laravelnya) :
@@ -81,9 +82,11 @@ php artisan serve
 ```
 
 Maka terminal akan menampilkan tampilan berikut.
+
 ![image](https://user-images.githubusercontent.com/79520394/182097526-f65fefb0-b60a-4a84-be0b-852ea85c33ba.png)
 
 Dan setelah kalian mengaktifkan web server dan server artisan Laravelnya, selanjutnya kalian pergi ke folder penjualan - routes - web.php.
+
 ![image](https://user-images.githubusercontent.com/79520394/182098029-646cbbe4-7974-4ef4-9168-207ecc81ad29.png)
 
 Di file web.php kalian ketikan code berikut :
@@ -99,10 +102,12 @@ Route::get('/', function () {
 ```
 
 Untuk melihat web.php nya kalian bisa ketikan ID berikut pada browser : 127.0.0.1:8000 , kalian bisa melihat link urlnya pada foto saat kalian mengetikkan PHP artisan serve.
+
 ![image](https://user-images.githubusercontent.com/79520394/182096364-90f02f48-1d82-4fcc-8bf6-beda8c023342.png)
 
 Berikut tampilan web.php :
+
 ![image](https://user-images.githubusercontent.com/79520394/182103450-5de40a67-1759-4abb-ab51-b8f79cd22a97.png)
 
 
-*Tugas
+#Tugas
